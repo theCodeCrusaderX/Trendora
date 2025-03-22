@@ -17,7 +17,7 @@ export const createNewOrder = createAsyncThunk(
     
 
     const response = await axios.post(
-      "https://trendora-backend-uonr.onrender.com/api/v1/shop/order/create",
+      "http://localhost:8000/api/v1/shop/order/create",
       orderData
     );
 
@@ -29,7 +29,7 @@ export const capturePayment = createAsyncThunk(
   "/order/capturePayment",
   async ({ paymentId, payerId, orderId }) => {
     const response = await axios.post(
-      "https://trendora-backend-uonr.onrender.com/api/v1/shop/order/capture",
+      "http://localhost:8000/api/v1/shop/order/capture",
       {
         paymentId,
         payerId,
@@ -45,7 +45,7 @@ export const getAllOrdersByUserId = createAsyncThunk(
   "/order/getAllOrdersByUserId",
   async (userId) => {
     const response = await axios.get(
-      `https://trendora-backend-uonr.onrender.com/api/v1/shop/order/list/${userId}`
+      `http://localhost:8000/api/v1/shop/order/list/${userId}`
     );
 
     return response.data;
@@ -56,7 +56,7 @@ export const getOrderDetails = createAsyncThunk(
   "/order/getOrderDetails",
   async (id) => {
     const response = await axios.get(
-      `https://trendora-backend-uonr.onrender.com/api/v1/shop/order/details/${id}`
+      `http://localhost:8000/api/v1/shop/order/details/${id}`
     );
 
     return response.data;

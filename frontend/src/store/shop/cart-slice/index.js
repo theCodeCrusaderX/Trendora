@@ -14,7 +14,7 @@ export const addToCart = createAsyncThunk(
     
     
     const response = await axios.post(
-      "https://trendora-backend-uonr.onrender.com/api/v1/shop/cart/add",
+      "http://localhost:8000/api/v1/shop/cart/add",
       {
         userId,
         productId,
@@ -30,7 +30,7 @@ export const fetchCartItems = createAsyncThunk(
   "cart/fetchCartItems",
   async (userId) => {
     const response = await axios.get(
-      `https://trendora-backend-uonr.onrender.com/api/v1/shop/cart/get/${userId}`
+      `http://localhost:8000/api/v1/shop/cart/get/${userId}`
     );
 
     console.log('202',response.data);
@@ -44,7 +44,7 @@ export const deleteCartItem = createAsyncThunk(
   "cart/deleteCartItem",
   async ({ userId, productId }) => {
     const response = await axios.delete(
-      `https://trendora-backend-uonr.onrender.com/api/v1/shop/cart/delete/${userId}/${productId}`
+      `http://localhost:8000/api/v1/shop/cart/delete/${userId}/${productId}`
     );
 
     return response.data;
@@ -55,7 +55,7 @@ export const updateCartQuantity = createAsyncThunk(
   "cart/updateCartQuantity",
   async ({ userId, productId, quantity }) => {
     const response = await axios.put(
-      "https://trendora-backend-uonr.onrender.com/api/v1/shop/cart/update-cart",
+      "http://localhost:8000/api/v1/shop/cart/update-cart",
       {
         userId,
         productId,

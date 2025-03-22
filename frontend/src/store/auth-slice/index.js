@@ -14,7 +14,7 @@ export const registerUser = createAsyncThunk(
 
   async (data) => {
     const response = await axios.post(
-      "https://trendora-backend-uonr.onrender.com/api/v1/users/register",
+      "http://localhost:8000/api/v1/users/register",
       data,
       {
         withCredentials: true,
@@ -31,7 +31,7 @@ export const loginUser = createAsyncThunk(
 
   async (data) => {
     const response = await axios.post(
-      "https://trendora-backend-uonr.onrender.com/api/v1/users/login",
+      "http://localhost:8000/api/v1/users/login",
       data,
       {
         withCredentials: true,
@@ -45,7 +45,7 @@ export const loginUser = createAsyncThunk(
 
 export const logoutUser = createAsyncThunk("/auth/logoutUser", async () => {
   const response = await axios.post(
-    "https://trendora-backend-uonr.onrender.com/api/v1/users/logout",
+    "http://localhost:8000/api/v1/users/logout",
     {},
     {
       withCredentials: true,
@@ -58,7 +58,7 @@ export const logoutUser = createAsyncThunk("/auth/logoutUser", async () => {
 
 export const checkAuth = createAsyncThunk("/auth/checkAuth", async () => {
   const response = await axios.get(
-    "https://trendora-backend-uonr.onrender.com/api/v1/users/check-auth",
+    "http://localhost:8000/api/v1/users/check-auth",
     {
       withCredentials: true,
       headers: {
@@ -76,7 +76,7 @@ export const loginAsGuest = createAsyncThunk(
   "/auth/loginAsGuest",
   async () => {
     const response = await axios.post(
-      "https://trendora-backend-uonr.onrender.com/api/v1/users/guest-login",
+      "http://localhost:8000/api/v1/users/guest-login",
       {},
       {
         withCredentials: true,
