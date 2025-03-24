@@ -75,17 +75,12 @@ Backend: http://localhost:8000
     
 ## Screenshots
 
-![Auth page](https://drive.google.com/file/d/1p2ULAGXyom2-nAruZuVN9JwL0dab8zCj/view?usp=drive_link)
-
-![Admin order page](https://drive.google.com/file/d/1k3ydn7bqPvEPMy5ROrKi7EvSfMGV5yAZ/view?usp=drive_link)
-
-![Admin listing page](https://drive.google.com/file/d/1qlf-n2OoyOuibBIhExJEWXVV2Db5mjZn/view?usp=drive_link)
-
-![User home page](https://drive.google.com/file/d/1HQGaBrYPcdQPHZHb3cnXZXiqKoWs-qQe/view?usp=drive_link)
-
-![User Product Listing page](https://drive.google.com/file/d/1MVQHXOGrscxfKPRbo66tbADH_xN5uWkk/view?usp=drive_link)
-
-![Checkout page](https://drive.google.com/file/d/17gma_zXyHczDqS5SA9cGRIOwa9O7ToGu/view?usp=drive_link)
+![auth-page](https://github.com/user-attachments/assets/1303fdf5-4b79-475e-b912-518913020174)
+![User-home-page](https://github.com/user-attachments/assets/b4e99c17-0140-4634-923e-56c438f25972)
+![User-Product-listing-page](https://github.com/user-attachments/assets/5f123aab-49b3-4768-96a2-131316e488ab)
+![User-checkout-page](https://github.com/user-attachments/assets/c74a1b80-aa4b-4f1f-ad0f-95f2bc8ad64e)
+![admin-product-page](https://github.com/user-attachments/assets/6df8e747-21fc-4da7-88b9-82a6dd35f79b)
+![admin-order-page](https://github.com/user-attachments/assets/b6287f13-02ef-49a6-8a57-b6a75d20ead9)
 
 
 ## Feedback
