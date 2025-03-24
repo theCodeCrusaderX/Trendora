@@ -9,6 +9,10 @@ E-Commerce Web Application
 - [Dinesh](https://github.com/theCodeCrusaderX)
 
 
+## YouTube Video Link
+https://www.youtube.com/watch?v=ksKSB9s6MZY
+
+
 ## Features
 
 - User Authentication: Secure login and registration using JWT (JSON Web Tokens).
@@ -49,10 +53,14 @@ Install my-project with npm
 
 ```bash
   git clone https://github.com/theCodeCrusaderX/Trendora.git
+```
 
+```bash
     cd backend
     npm install
+```
 
+```bash
     cd frontend
     npm install
 ```
