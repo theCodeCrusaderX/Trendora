@@ -6,7 +6,7 @@ const app = express()
 
 app.use(
   cors({
-    origin: ["http://localhost:5173", "https://frontend-three-alpha-20.vercel.app","https://trendora-frontend-1r1k.onrender.com"],
+    origin: ["http://localhost:5173","https://trendora-lyart.vercel.app"],
     methods: ["GET", "POST", "DELETE", "PUT"],
     allowedHeaders: [
       "Content-Type",
