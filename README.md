@@ -4,6 +4,11 @@
 E-Commerce Web Application 
 
 
+## Live Demo
+
+[Click here to view the live app](https://trendora-lyart.vercel.app/)
+
+
 ## Authors
 
 - [Dinesh](https://github.com/theCodeCrusaderX)
