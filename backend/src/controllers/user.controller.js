@@ -78,8 +78,10 @@ const loginUser = asyncHandler(async (req, res) => {
 
   const options = {
     httpOnly: true,
-    secure: true,
     maxAge: 10 * 24 * 60 * 60 * 1000,
+    secure: true,           // Must be true for HTTPS
+    sameSite: 'None',       // Required for cross-site cookies
+    path: '/',
   };
 
   return res
