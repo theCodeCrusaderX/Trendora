@@ -11,7 +11,7 @@ export const getAllOrdersForAllUser = createAsyncThunk(
   "/order/getAllOrdersForAllUser",
   async () => {
     const response = await axios.get(
-      `http://localhost:8000/api/v1/admin/order/get`
+      `https://trendora-backend-uonr.onrender.com/api/v1/admin/order/get`
     );
 
     return response.data;
@@ -22,7 +22,7 @@ export const getOrderDetails = createAsyncThunk(
   "/order/getOrderDetails",
   async (id) => {
     const response = await axios.get(
-      `http://localhost:8000/api/v1/admin/order/details/${id}`
+      `https://trendora-backend-uonr.onrender.com/api/v1/admin/order/details/${id}`
     );
 
     return response.data;
@@ -36,7 +36,7 @@ export const updateOrderStatus = createAsyncThunk(
     // console.log("bbbbbbbbbbbbbbbbbbbbbbb",id);
 
     const response = await axios.put(
-      `http://localhost:8000/api/v1/admin/order/update/${id}`,
+      `https://trendora-backend-uonr.onrender.com/api/v1/admin/order/update/${id}`,
       data
     );
 
