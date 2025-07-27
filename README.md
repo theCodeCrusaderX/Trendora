@@ -95,6 +95,10 @@ Backend: http://localhost:8000
 ![admin-product-page](https://github.com/user-attachments/assets/6df8e747-21fc-4da7-88b9-82a6dd35f79b)
 ![admin-order-page](https://github.com/user-attachments/assets/b6287f13-02ef-49a6-8a57-b6a75d20ead9)
 
+## For payment use
+email : sb-zhcgd37346706@personal.example.com
+password : Dr4k3g1#
+
 
 ## Feedback
 

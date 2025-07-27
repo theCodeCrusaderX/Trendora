@@ -54,7 +54,7 @@ function ImageUpload({
     const data = new FormData()
     data.append("my_file",imageFile)
 
-    const res = await axios.post("http://localhost:8000/api/v1/admin/img-upload",data)
+    const res = await axios.post("https://trendora-backend-uonr.onrender.com/api/v1/admin/img-upload",data)
 
     console.log("res", res);
     if (res?.data?.success) {

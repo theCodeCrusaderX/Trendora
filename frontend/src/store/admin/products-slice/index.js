@@ -12,7 +12,7 @@ export const addNewProduct = createAsyncThunk(
     console.log("dta",data);
     
     const result = await axios.post(
-      "http://localhost:8000/api/v1/admin/addProduct",
+      "https://trendora-backend-uonr.onrender.com/api/v1/admin/addProduct",
       data,
       {
         headers: {
@@ -30,7 +30,7 @@ export const fetchAllProducts = createAsyncThunk(
   "/products/fetchAllProducts",
   async () => {
     const result = await axios.get(
-      "http://localhost:8000/api/v1/admin/getProduct"
+      "https://trendora-backend-uonr.onrender.com/api/v1/admin/getProduct"
     );
 
     console.log(result);
@@ -44,7 +44,7 @@ export const editProduct = createAsyncThunk(
   "/products/editProduct",
   async ({ id, formData }) => {
     const result = await axios.put(
-      `http://localhost:8000/api/v1/admin/editProduct/${id}`,
+      `https://trendora-backend-uonr.onrender.com/api/v1/admin/editProduct/${id}`,
       formData,
       {
         headers: {
@@ -64,7 +64,7 @@ export const deleteProduct = createAsyncThunk(
   "/products/deleteProduct",
   async (id) => {
     const result = await axios.delete(
-      `http://localhost:8000/api/v1/admin/deleteproduct/${id}`
+      `https://trendora-backend-uonr.onrender.com/api/v1/admin/deleteproduct/${id}`
     );
 
     return result?.data;

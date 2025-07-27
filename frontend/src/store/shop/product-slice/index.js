@@ -15,7 +15,7 @@ export const getFilteredProduct = createAsyncThunk(
       sortBy: sortParams,
     });
     const res = await axios.get(
-      `http://localhost:8000/api/v1/shop/getProduct?${query}`
+      `https://trendora-backend-uonr.onrender.com/api/v1/shop/getProduct?${query}`
     );
 
     return res;
@@ -26,7 +26,7 @@ export const fetchProductDetails = createAsyncThunk(
   "/products/fetchProductDetails",
   async (id) => {
     const result = await axios.get(
-      `http://localhost:8000/api/v1/shop/getProductDetail/${id}`
+      `https://trendora-backend-uonr.onrender.com/api/v1/shop/getProductDetail/${id}`
     );
 
     return result?.data;
